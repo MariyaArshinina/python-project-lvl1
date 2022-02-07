@@ -3,6 +3,8 @@ on: push
 jobs:
   linter-check:
     runs-on: ubuntu-latest
-    steps:      
+    steps:
+      - name: chekout-code
+        uses: actions/checkout@v2      
       - name: run-linter
         run: make lint
