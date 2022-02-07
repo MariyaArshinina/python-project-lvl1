@@ -4,7 +4,6 @@ jobs:
   linter-check:
     runs-on: ubuntu-latest
     steps:
-      - name: chekout-code
-        uses: actions/checkout@v2      
+      - uses: actions/checkout@v2      
       - name: run-linter
         run: make lint
