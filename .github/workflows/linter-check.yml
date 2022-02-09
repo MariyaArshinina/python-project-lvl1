@@ -5,7 +5,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2      
+      - uses: MariyaArshinina/python-project-lvl1@v2      
       - name: install
         run: |
           make install
