@@ -3,3 +3,4 @@
 [![Maintainability](https://github.com/MariyaArshinina/python-project-lvl1/workflows/brain-games/badge.svg)](https://github.com/MariyaArshinina/python-project-lvl1/actions)
 [![Github Actions](https://github.com/MariyaArshinina/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/MariyaArshinina/python-project-lvl1/actions)
 https://asciinema.org/a/nIjtOPcBrV6lom7IiQSGcXECD
+asciinema: asciicast saved to /tmp/tmpn0vfq5ms-ascii.cast
