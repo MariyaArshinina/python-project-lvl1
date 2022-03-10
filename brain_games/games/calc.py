@@ -18,7 +18,9 @@ def brain_calc():
             print('Correct!')
             right_answers += 1
         else:
-            print(your_answer + ' is wrong answer ;(. Correct answer was ' + str(eval(expression)))
+            print(
+                your_answer + ' is wrong answer ;(.'
+                'Correct answer was ' + str(eval(expression)))
             print('Let\'s try again, {}!'.format(brain_games.games.greet.name))
             break
         if right_answers == 3:
