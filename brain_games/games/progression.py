@@ -1,7 +1,6 @@
 #!/usr/bin/env/python3
 import prompt
 import random
-import brain_games.games.progression
 
 
 def progression():
@@ -29,9 +28,10 @@ def progression():
             print('Correct!')
             right_answers += 1
         else:
-            print(your_answer + ' is wrong answer ;(. Correct answer was ' + str(answer))
+            print(
+                your_answer + ' is wrong answer ;(.'
+                'Correct answer was ' + str(answer))
             print('Let\'s try again, {}!'.format(name))
             break
         if right_answers == 3:
             print('Congratulations, {}!'.format(name))
-
