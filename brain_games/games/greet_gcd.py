@@ -19,7 +19,9 @@ def greet_gcd():
             print('Correct!')
             right_answers += 1
         else:
-            print(your_answer + ' is wrong answer ;(. Correct answer was ' + str(num))
+            print(
+                your_answer + ' is wrong answer ;(.'
+                'Correct answer was ' + str(num))
             print('Let\'s try again, {}!'.format(name))
             break
         if right_answers == 3:
