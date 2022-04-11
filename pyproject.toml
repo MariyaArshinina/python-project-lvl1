@@ -6,6 +6,12 @@ authors = ["Mariya Arshinina <mariya.arshinina@mail.ru>"]
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/MariyaArshinina/python-project-lvl1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT",
+    "Operating System :: OS Independent"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
