@@ -12,4 +12,5 @@ def calc():
     result = eval(question)
     return question, result
 
+
 question, result = calc()
