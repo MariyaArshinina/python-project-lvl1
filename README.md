@@ -6,11 +6,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Github Actions](https://github.com/MariyaArshinina/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/MariyaArshinina/python-project-lvl1/actions)
 
-https://asciinema.org/a/nIjtOPcBrV6lom7IiQSGcXECD
-asciinema: asciicast saved to /tmp/tmpn0vfq5ms-ascii.cast
-/tmp/tmporjpl1yn-ascii.cast
-https://asciinema.org/a/KXODJZBd5HxPhBbq5VhJ0R0dx
-https://asciinema.org/a/4ASdJuSM64R9dfG8PGCxMpvzm
+[![brain-calc](https://asciinema.org/a/yBUNqkjTcAhX2Nac0MHkwBLbE.svg)](https://asciinema.org/a/yBUNqkjTcAhX2Nac0MHkwBLbE)
+[![brain-gcd](https://asciinema.org/a/FZ6Fwfw6sBtFPvHwBc28nbEem.svg)](https://asciinema.org/a/FZ6Fwfw6sBtFPvHwBc28nbEem)
+
 
 It's the first of four projects in the course Hexlet. 
 In the prosess on the project, we got the skills 

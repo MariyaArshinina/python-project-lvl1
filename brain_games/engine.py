@@ -21,7 +21,7 @@ def run_game(game):
         else:
             print(
                 answer + ' is wrong answer ;(. '
-               'Correct answer was ' + str(result))
+                'Correct answer was ' + str(result))
             print('Let\'s try again, {}!'.format(name))
             break
         if right_answers == 3:
