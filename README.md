@@ -8,6 +8,8 @@
 
 [![brain-calc](https://asciinema.org/a/yBUNqkjTcAhX2Nac0MHkwBLbE.svg)](https://asciinema.org/a/yBUNqkjTcAhX2Nac0MHkwBLbE)
 [![brain-gcd](https://asciinema.org/a/FZ6Fwfw6sBtFPvHwBc28nbEem.svg)](https://asciinema.org/a/FZ6Fwfw6sBtFPvHwBc28nbEem)
+[![brain-progression](https://asciinema.org/a/L7xkkBfIqc2lrYsKfdAMWRN00)](https://asciinema.org/a/L7xkkBfIqc2lrYsKfdAMWRN00)
+
 
 
 It's the first of four projects in the course Hexlet. 
