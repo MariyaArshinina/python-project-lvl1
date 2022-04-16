@@ -15,13 +15,13 @@ def run_game(game):
         question, result = game()
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
-        if int(answer) == result:
+        if answer == result:
             print('Correct!')
             right_answers += 1
         else:
             print(
                 answer + ' is wrong answer ;(. '
-                'Correct answer was ' + str(result))
+                'Correct answer was ' + result)
             print('Let\'s try again, {}!'.format(name))
             break
         if right_answers == 3:

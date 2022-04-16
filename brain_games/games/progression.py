@@ -17,6 +17,7 @@ def progression():
     res_number_list2 = res_number_list.replace(',', ' ')
     res_number_list3 = res_number_list2.replace('[', ' ')
     question = res_number_list3.replace(']', ' ')
+    result = str(result)
     return question, result
 
 

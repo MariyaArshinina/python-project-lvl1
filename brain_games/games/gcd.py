@@ -14,6 +14,7 @@ def gcd():
     for i in range(1, temp + 1):
         if ((random_number1 % i == 0) and (random_number2 % i == 0)):
             result = i
+            result = str(result)
     return question, result
 
 
