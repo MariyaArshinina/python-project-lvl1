@@ -6,7 +6,6 @@ from brain_games.engine import greeting, run_game
 def main():
     greeting()
     print(begin)
-    gcd()
     run_game(gcd)
 
     if __name__ == '__main__':

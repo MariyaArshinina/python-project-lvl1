@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-from brain_games.games.even import brain_even
-import brain_games.games.greet_even
+from brain_games.games.even import even, begin
+from brain_games.engine import greeting, run_game
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    brain_games.games.greet_even.greet_even()
-    brain_even()
+    greeting()
+    print(begin)
+    run_game(even)
 
     if __name__ == '__main__':
         main()

@@ -6,7 +6,6 @@ from brain_games.engine import greeting, run_game
 def main():
     greeting()
     print(begin)
-    prime()
     run_game(prime)
 
     if __name__ == '__main__':
