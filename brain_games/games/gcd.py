@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import random
-begin = 'Find the greatest common divisor of given numbers.'
+
+
+def begin_game():
+    begin = 'Find the greatest common divisor of given numbers.'
+    return begin
+
+
+begin = begin_game()
 
 
 def gcd():

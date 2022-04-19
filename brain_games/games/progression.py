@@ -1,6 +1,13 @@
 #!/usr/bin/env/python3
 import random
-begin = 'What number is missing in the progression?'
+
+
+def begin_game():
+    begin = 'What number is missing in the progression?'
+    return begin
+
+
+begin = begin_game()
 
 
 def progression():

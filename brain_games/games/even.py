@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import random
-begin = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def begin_game():
+    begin = 'Answer "yes" if the number is even, otherwise answer "no".'
+    return begin
+
+
+begin = begin_game()
 
 
 def even():

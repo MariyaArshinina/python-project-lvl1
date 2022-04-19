@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import random
-begin = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def begin_game():
+    begin = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    return begin
+
+
+begin = begin_game()
 
 
 def prime():

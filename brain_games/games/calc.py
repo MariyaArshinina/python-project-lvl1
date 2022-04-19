@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import random
-begin = 'What is the result of expressions?'
+
+
+def begin_game():
+    begin = 'What is the result of expressions?'
+    return begin
+
+
+begin = begin_game()
 
 
 def calc():

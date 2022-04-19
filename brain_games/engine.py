@@ -2,14 +2,12 @@
 import prompt
 
 
-def greeting():
+def run_game(game, begin_game):
     print('Welcom to the Brain Games!')
-    global name
     name = prompt.string('May I have your name?: ')
     print('Hello, {}!'.format(name))
-
-
-def run_game(game):
+    begin = begin_game()
+    print(begin)
     right_answers = 0
     for x in range(0, 3):
         question, result = game()
