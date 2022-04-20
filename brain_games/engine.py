@@ -3,7 +3,7 @@ import prompt
 
 
 def run_game(game, begin_game):
-    print('Welcom to the Brain Games!')
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name?: ')
     print('Hello, {}!'.format(name))
     begin = begin_game()
