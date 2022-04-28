@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 import random
 
+begin = 'Find the greatest common divisor of given numbers.'
+
 
 def begin_game():
-    begin = 'Find the greatest common divisor of given numbers.'
-    return begin
-
-
-begin = begin_game()
+    global random_number1
+    random_number1 = random.randint(1, 100)
+    global random_number2
+    random_number2 = random.randint(1, 100)
+    question = str(random_number1) + ' ' + str(random_number2)
+    return question
 
 
 def gcd():
-    random_number1 = random.randint(1, 100)
-    random_number2 = random.randint(1, 100)
-    question = str(random_number1) + ' ' + str(random_number2)
     if random_number1 > random_number2:
         temp = random_number2
     else:
@@ -22,7 +22,4 @@ def gcd():
         if ((random_number1 % i == 0) and (random_number2 % i == 0)):
             result = i
             result = str(result)
-    return question, result
-
-
-question, result = gcd()
+    return result

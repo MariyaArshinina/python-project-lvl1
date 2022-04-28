@@ -2,15 +2,15 @@
 import prompt
 
 
-def run_game(game, begin_game):
+def run_game(begin, game, begin_game):
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?: ')
+    name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
-    begin = begin_game()
     print(begin)
     right_answers = 0
     for x in range(0, 3):
-        question, result = game()
+        question = begin_game()
+        result = game()
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
         if answer == result:
