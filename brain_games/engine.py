@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 import prompt
 
+number_rounds = 3
 
-def run_game(begin, game, begin_game):
+
+def run_game(begin, get_question_result):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print(begin)
     right_answers = 0
-    for x in range(0, 3):
-        question = begin_game()
-        result = game()
-        print('Question: ' + question)
+    for x in range(number_rounds):
+        question, result = get_question_result()
+        print('Question:' + question)
         answer = prompt.string('Your answer: ')
         if answer == result:
             print('Correct!')

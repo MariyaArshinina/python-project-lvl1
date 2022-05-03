@@ -2,20 +2,17 @@
 import random
 
 begin = 'What is the result of expressions?'
+beg_range = 1
+end_range = 100
 
 
-def begin_game():
-    random_number1 = random.randint(1, 100)
-    random_number2 = random.randint(1, 100)
+def get_question_result():
+    random_number1 = random.randint(beg_range, end_range)
+    random_number2 = random.randint(beg_range, end_range)
     operand = ['+', '-', '*']
     random_operand = random.choice(operand)
-    global question
-    question = str(random_number1) + ' ' + str(
+    question = ' ' + str(random_number1) + ' ' + str(
         random_operand) + ' ' + str(random_number2)
-    return question
-
-
-def calc():
     result = eval(question)
     result = str(result)
-    return result
+    return (question, result)
