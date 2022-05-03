@@ -11,8 +11,10 @@ def get_question_result():
     random_number2 = random.randint(beg_range, end_range)
     operand = ['+', '-', '*']
     random_operand = random.choice(operand)
-    question = ' ' + str(random_number1) + ' ' + (
-        random_operand) + ' ' + str(random_number2)
+    number1 = str(random_number1)
+    number2 = str(random_number2)
+    operation = random_operand
+    question = number1 + operation + number2
     result = eval(question)
     result = str(result)
     return (question, result)
