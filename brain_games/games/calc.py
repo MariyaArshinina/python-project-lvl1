@@ -14,7 +14,7 @@ def get_question_result():
     number1 = str(random_number1)
     number2 = str(random_number2)
     operation = random_operand
-    question = number1 + operation + number2
+    question = "{} {} {}".format(number1, operation, number2)
     result = eval(question)
     result = str(result)
     return (question, result)
