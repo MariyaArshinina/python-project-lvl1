@@ -12,7 +12,7 @@ def run_game(begin, get_question_result):
     right_answers = 0
     for x in range(number_rounds):
         question, result = get_question_result()
-        print('Question:' + question)
+        print('Question:{}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == result:
             print('Correct!')
