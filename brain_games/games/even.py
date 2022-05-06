@@ -17,7 +17,7 @@ def is_even(random_number):
 
 def get_question_result():
     random_number = begin_game()
-    question = random_number
+    question = str(random_number)
     if is_even(random_number):
         result = 'yes'
     else:
