@@ -25,9 +25,9 @@ def get_question_result():
     i = random.randint(1, lot_digits - 1)
     member = number_list[i]
     number_list[i] = '..'
-    res_number_list = str(number_list).replace("'", " ")
-    res_number_list2 = res_number_list.replace(',', ' ')
-    res_number_list3 = res_number_list2.replace('[', ' ')
-    question = res_number_list3.replace(']', ' ')
+    res_number_list = str(number_list).replace("'", "")
+    res_number_list2 = res_number_list.replace(',', '')
+    res_number_list3 = res_number_list2.replace('[', '')
+    question = res_number_list3.replace(']', '')
     result = str(member)
     return (question, result)
