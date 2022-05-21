@@ -1,31 +1,25 @@
 #!/usr/bin/env python3
 import random
 
-begin = 'Find the greatest common divisor of given numbers.'
-beg_range = 1
-end_range = 100
-
-
-def begin_game():
-    random_number1 = random.randint(beg_range, end_range)
-    random_number2 = random.randint(beg_range, end_range)
-    return random_number1, random_number2
+BEGIN = 'Find the greatest common divisor of given numbers.'
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
 def gcd(random_number1, random_number2):
-    if random_number1 > random_number2:
-        temp = random_number2
-    else:
-        temp = random_number1
-    for i in range(1, temp + 1):
-        if ((random_number1 % i == 0) and (random_number2 % i == 0)):
-            result = i
+    while random_number1 != 0 and random_number2 != 0:
+        if random_number1 > random_number2:
+            random_number1 = random_number1 % random_number2
+        else:
+            random_number2 = random_number2 % random_number1
+        result = random_number1 + random_number2
     return result
 
 
-def get_question_result():
-    random_number1, random_number2 = begin_game()
+def get_question_correct_answer():
+    random_number1 = random.randint(LOWER_BOUND, UPPER_BOUND)
+    random_number2 = random.randint(LOWER_BOUND, UPPER_BOUND)
     question = str(random_number1) + ' ' + str(random_number2)
     result = gcd(random_number1, random_number2)
-    result = str(result)
-    return (question, result)
+    correct_answer = str(result)
+    return question, correct_answer

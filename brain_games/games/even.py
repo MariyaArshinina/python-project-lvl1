@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 import random
 
-begin = 'Answer "yes" if the number is even, otherwise answer "no".'
-beg_range = 1
-end_range = 100
-
-
-def begin_game():
-    random_number = random.randint(beg_range, end_range)
-    return random_number
+BEGIN = 'Answer "yes" if the number is even, otherwise answer "no".'
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
 def is_even(random_number):
     return random_number % 2 == 0
 
 
-def get_question_result():
-    random_number = begin_game()
+def get_question_correct_answer():
+    random_number = random.randint(LOWER_BOUND, UPPER_BOUND)
     question = "{}".format(random_number)
     if is_even(random_number):
-        result = 'yes'
+        correct_answer = 'yes'
     else:
-        result = 'no'
-    return (question, result)
+        correct_answer = 'no'
+    return question, correct_answer

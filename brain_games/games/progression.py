@@ -1,33 +1,35 @@
 #!/usr/bin/env/python3
 import random
 
-begin = 'What number is missing in the progression?'
-min_lot_dig = 5
-max_lot_dig = 10
-min_com_dif = 2
-max_com_dif = 10
-min_in_term = 1
-max_in_term = 10
+BEGIN = 'What number is missing in the progression?'
+MIN_LOT_DIG = 5
+MAX_LOT_DIG = 10
+MIN_COM_DIF = 2
+MAX_COM_DIF = 10
+MIN_IN_TERM = 1
+MAX_IN_TERM = 10
 
 
 def start_progression():
-    lot_digits = random.randint(min_lot_dig, max_lot_dig)
-    com_dif = random.randint(min_com_dif, max_com_dif)
-    initial_term = random.randint(min_in_term, max_in_term)
+    lot_digits = random.randint(MIN_LOT_DIG, MAX_LOT_DIG)
+    com_dif = random.randint(MIN_COM_DIF, MAX_COM_DIF)
+    initial_term = random.randint(MIN_IN_TERM, MAX_IN_TERM)
     stop = initial_term + (lot_digits - 1) * com_dif
     numbers = range(initial_term, stop + com_dif, com_dif)
     return lot_digits, numbers
 
 
-def get_question_result():
+def get_progression_list():
     lot_digits, numbers = start_progression()
     number_list = list(numbers)
     i = random.randint(1, lot_digits - 1)
     member = number_list[i]
     number_list[i] = '..'
-    res_number_list = str(number_list).replace("'", "")
-    res_number_list2 = res_number_list.replace(',', '')
-    res_number_list3 = res_number_list2.replace('[', '')
-    question = res_number_list3.replace(']', '')
-    result = str(member)
-    return (question, result)
+    return member, number_list
+
+
+def get_question_correct_answer():
+    member, number_list = get_progression_list()
+    question = " ".join(str(x) for x in number_list)
+    correct_answer = str(member)
+    return question, correct_answer
