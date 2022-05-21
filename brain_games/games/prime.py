@@ -10,7 +10,7 @@ def is_prime(random_number):
     k = 0
     for i in range(2, random_number // 2 + 1):
         if random_number % i == 0:
-            k = 1         
+            k = 1
     return k <= 0
 
 
